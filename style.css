@@ -199,6 +199,8 @@ section p {
   margin-bottom: 16px;
 }
 
+section .buttons { margin-top: 16px; }
+
 section .btn {
   margin-top: 4px;
 }
