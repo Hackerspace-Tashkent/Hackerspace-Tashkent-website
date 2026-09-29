@@ -50,6 +50,29 @@ header h1 {
   margin-bottom: 12px;
 }
 
+/* Language Switcher */
+.lang-switcher {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.lang-switcher a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #30363d;
+}
+
+.lang-switcher a:hover,
+.lang-switcher a.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(57, 211, 83, 0.1);
+}
+
 nav {
   display: flex;
   gap: 16px;
