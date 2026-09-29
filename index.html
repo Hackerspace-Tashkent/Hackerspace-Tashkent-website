@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hackerspace Tashkent — Open Source, DIY and Technology Community</title>
+  <title id="page-title">Hackerspace Tashkent</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Hackerspace Tashkent</h1>
-      <p class="tagline">Learn. Build. Share.</p>
+      <p class="tagline" id="tagline">Learn. Build. Share.</p>
+      <div class="lang-switcher">
+        <a href="#" onclick="setLang('en')">EN</a>
+        <a href="#" onclick="setLang('ru')">RU</a>
+        <a href="#" onclick="setLang('uz-lat')">UZ</a>
+        <a href="#" onclick="setLang('uz-cyr')">ЎЗ</a>
+      </div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#events">Events</a>
-        <a href="#join">Join us</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" data-key="nav_home">Home</a>
+        <a href="#about" data-key="nav_about">About</a>
+        <a href="#projects" data-key="nav_projects">Projects</a>
+        <a href="#events" data-key="nav_events">Events</a>
+        <a href="#join" data-key="nav_join">Join us</a>
+        <a href="#contact" data-key="nav_contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -25,63 +31,63 @@
   <main>
     <section id="home" class="hero">
       <div class="container">
-        <h2>Hackerspace Tashkent</h2>
-        <p>A community for makers, developers, engineers, students, and technology enthusiasts in Tashkent.</p>
+        <h2 data-key="hero_title">Hackerspace Tashkent</h2>
+        <p data-key="hero_sub">A community for makers, developers, engineers, students, and technology enthusiasts in Tashkent.</p>
         <div class="buttons">
-          <a href="https://t.me/hackerspace_tashkent" class="btn primary">Join our Telegram</a>
-          <a href="https://github.com/Hackerspace-Tashkent" class="btn secondary">Explore GitHub</a>
+          <a href="https://t.me/hackerspace_tashkent" class="btn primary" data-key="btn_telegram">Join our Telegram</a>
+          <a href="https://github.com/Hackerspace-Tashkent" class="btn secondary" data-key="btn_github">Explore GitHub</a>
         </div>
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-        <h2>About the Community</h2>
-        <p>Hackerspace Tashkent is a community for people interested in technology, open source, electronics, programming, DIY projects, and practical learning.</p>
-        <p>We share knowledge, build projects, organize workshops, and help each other turn ideas into working prototypes.</p>
+        <h2 data-key="about_title">About the Community</h2>
+        <p data-key="about_1">Hackerspace Tashkent is a community for people interested in technology, open source, electronics, programming, DIY projects, and practical learning.</p>
+        <p data-key="about_2">We share knowledge, build projects, organize workshops, and help each other turn ideas into working prototypes.</p>
       </div>
     </section>
 
     <section id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <h2 data-key="projects_title">Projects</h2>
         <div class="cards">
-          <div class="card"><h3>Open Source Software</h3></div>
-          <div class="card"><h3>Electronics and IoT</h3></div>
-          <div class="card"><h3>Linux, DevOps and Self-Hosting</h3></div>
-          <div class="card"><h3>Robotics and Embedded Systems</h3></div>
-          <div class="card"><h3>Education and Community Tools</h3></div>
+          <div class="card"><h3 data-key="proj_1">Open Source Software</h3></div>
+          <div class="card"><h3 data-key="proj_2">Electronics and IoT</h3></div>
+          <div class="card"><h3 data-key="proj_3">Linux, DevOps and Self-Hosting</h3></div>
+          <div class="card"><h3 data-key="proj_4">Robotics and Embedded Systems</h3></div>
+          <div class="card"><h3 data-key="proj_5">Education and Community Tools</h3></div>
         </div>
-        <p class="coming-soon">Projects are coming soon.</p>
+        <p class="coming-soon" data-key="projects_soon">Projects are coming soon.</p>
       </div>
     </section>
 
     <section id="events">
       <div class="container">
-        <h2>Events</h2>
-        <p>Workshops, meetups, and community events will be announced in our Telegram channel.</p>
-        <a href="https://t.me/hackerspace_tashkent" class="btn primary">Follow us on Telegram</a>
+        <h2 data-key="events_title">Events</h2>
+        <p data-key="events_1">Workshops, meetups, and community events will be announced in our Telegram channel.</p>
+        <a href="https://t.me/hackerspace_tashkent" class="btn primary" data-key="btn_telegram2">Follow us on Telegram</a>
       </div>
     </section>
 
     <section id="join">
       <div class="container">
-        <h2>How to Join</h2>
-        <p>You can join Hackerspace Tashkent by following our Telegram channel, participating in discussions, sharing your projects, or helping organize community events.</p>
+        <h2 data-key="join_title">How to Join</h2>
+        <p data-key="join_1">You can join Hackerspace Tashkent by following our Telegram channel, participating in discussions, sharing your projects, or helping organize community events.</p>
         <div class="buttons">
-          <a href="https://t.me/hackerspace_tashkent" class="btn primary">Join Telegram</a>
-          <a href="https://github.com/Hackerspace-Tashkent" class="btn secondary">View GitHub</a>
-          <a href="mailto:hackerspace.tash@gmail.com" class="btn secondary">Contact us</a>
+          <a href="https://t.me/hackerspace_tashkent" class="btn primary" data-key="btn_join_telegram">Join Telegram</a>
+          <a href="https://github.com/Hackerspace-Tashkent" class="btn secondary" data-key="btn_join_github">View GitHub</a>
+          <a href="mailto:hackerspace.tash@gmail.com" class="btn secondary" data-key="btn_contact">Contact us</a>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:hackerspace.tash@gmail.com">hackerspace.tash@gmail.com</a></p>
-        <p>Telegram: <a href="https://t.me/hackerspace_tashkent">@hackerspace_tashkent</a></p>
-        <p>GitHub: <a href="https://github.com/Hackerspace-Tashkent">Hackerspace-Tashkent</a></p>
+        <h2 data-key="contact_title">Contact</h2>
+        <p>Email: <a href="mailto:hackerspace.tash@gmail.com" data-key="contact_email">hackerspace.tash@gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/hackerspace_tashkent" data-key="contact_telegram">@hackerspace_tashkent</a></p>
+        <p>GitHub: <a href="https://github.com/Hackerspace-Tashkent" data-key="contact_github">Hackerspace-Tashkent</a></p>
       </div>
     </section>
   </main>
