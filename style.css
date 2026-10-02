@@ -188,10 +188,36 @@ footer {
 /* Responsive */
 @media (max-width: 600px) {
   nav {
-    gap: 8px;
+    /* Одна строка ссылок на телефоне: цели мелкие, попасть тяжело.
+       Прокрутка по горизонтали тоже не годится -- полосу не видно,
+       и пункт за краем просто не находится. Переносим на несколько строк:
+       всё видно сразу, попасть можно пальцем. */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+  }
+  nav a {
+    padding: 8px 2px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
   .hero h2 {
     font-size: 1.5rem;
+  }
+  /* Кнопки в ряд на 390px -- это две узкие полосы. В столбик. */
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+    /* Палец крупнее курсора: минимум 44px по высоте. */
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* Fix: button overlap */
